@@ -1,0 +1,23 @@
+data = {
+    "type":"FeatureCollection",
+    "features":[
+        {"type":"Feature",
+        "geometry":{ 
+            "type": "Polygon",
+            "coordinates": [[[,]]]},
+            "properties":{
+                "height":"58.46781",
+                "base_height":"0.575795",
+                "colour":"#AAAAAA"}},,
+            "properties":{
+                "height":"58.46781",
+                "base_height":"0.575795",
+                "colour":"#AAAAAA"}},,
+            "properties":{
+                "height":"58.46781",
+                "base_height":"0.575795",
+                "colour":"#AAAAAA"
+                }
+            }
+        ]
+    }

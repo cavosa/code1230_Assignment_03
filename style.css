@@ -1,0 +1,221 @@
+@import url('font/hind.css') /*--- url(https://fonts.googleapis.com/css?family=Hind) --*/ /*--- Body Font --*/
+@import url('font/Nobile.css') /*--- url(https://fonts.googleapis.com/css?family=Nobile) --*/ /*--- Heading Font --*/
+
+/*--- Reset Style --*/
+*{
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
+.center{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body {
+  background-color: #FFF;
+  font-family: 'Hind', sans-serif;
+  font-size: 18px;
+  position: relative; /*--- Default Positioning --*/
+}
+h1 {
+  font-family: 'Nobile', sans-serif;
+  text-align: center;
+  font-size: 175%;
+  color: #4A4444;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  padding: 3% 0; /*--- Two arguments defines top-bottom and left-right --*/
+                 /*--- Four arguments defines top, right, bottom and left --*/
+}
+h3 {
+  font-family: 'Nobile', sans-serif;
+  text-align: center;
+  color: #4A4444;
+  text-transform: uppercase;
+  letter-spacing: 1%
+}
+p {
+  padding: 2%;
+  color: #4A4444;
+  text-align: justify;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+#banner-wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+#banner-wrapper p {
+  text-align: center;
+}
+
+/*--- Start Image Slider Style --*/
+  .slider {
+    width: 100%;
+  }
+  .slider 1 img {
+    /* min-width: 100%; */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;    
+    width: 50%;
+  }
+  /*--- We are referencing the bx slider plugin --*/
+  .slider .bx-wrapper .bx-controls-directions a {
+    outline: 0 none;
+    position: absolute; /*--- 'Absolute' means that the position stays on the page at all times --*/
+    text-indent: -9999px
+    top: 40%;
+    height: 71px;
+    width: 40px;
+    z-index: -1;
+    transition: all 0.7s;
+  }
+  .slider .bx-rapper:hover .bx-controls-direction a {
+    z-index: 5;
+  }
+  /*--- Styling actual previous and next buttons --*/
+  .slider .bx-wrapper .bx-prev {
+    background: #000 url("img/left-arrow-white.png") no-repeat 8px 13px
+    left: 0px; /*--- Margin Left --*/
+    opacity: 0.3;  
+  }
+  .slider .bx-wrapper .bx-prev:hover {
+    opacity: 0.6;  
+  }
+  .slider .bx-wrapper .bx-next {
+    background: #000 url("img/right-arrow-white.png") no-repeat 10px 12px
+    right: 0px; /*--- Margin Right --*/
+    opacity: 0.3;  
+  }
+  .slider .bx-wrapper .bx-next:hover {
+    opacity: 0.6;  
+  }
+/*--- End Image Slider Style --*/
+
+.one-half {
+  width: 44%;
+  float: left;
+  margin: 2% 0 3% 4%;
+  text-align: center;
+}
+.left-col {
+  width: 60%;
+  float: left;
+  margin: 4% 0 4% 4%;  
+}
+.sidebar {
+  width: 26%;
+  float: right;
+  margin: 4% 4%;
+  height: 50%;
+}
+.sidebar img {
+  opacity: 0.8;
+}
+.clearfix {
+  clear: both;
+}
+/*--- Start Parallax Section --*/
+.parallax-1 {
+  background: url("img/black-pattern.jpg") repeat fixed 100%;
+  text-align: center;
+}
+.parallax-inner {
+  padding-top: 90px; /* 90px */
+  padding-bottom: 200px; /* 300px */
+}
+.parallax-inner h1 {
+  color: #ffffff;
+}
+
+.parallax-inner h2 {
+  color: #ffffff;
+}
+
+.parallax-inner h3 {
+  color: #ffffff;
+}
+
+.parallax-inner li {
+  color: #ffffff;
+  text-align: center;
+}
+
+.parallax-inner p {
+  /* --- color: #F1F1F1; ---*/	
+	color: #ffffff;
+	text-align: center;
+}
+
+/*--- End Parallax Section --*/
+footer {
+  background: #262E37;
+  opacity: 0.9;
+  width: 100%;
+  margin-top: 5%;
+  padding: 1% 0;
+  overflow: auto;  
+}
+footer p {
+  color: #FFF;
+}
+
+/* -- MAP BOX --*/
+
+#map { 
+	/*--position:absolute; --*/	
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 0; 
+	bottom: 0; 				
+	width: 100%;
+}
+
+iframe {
+	display: block;
+	width: 760px;
+	height: 760px;
+	margin: 0 auto;
+}
+
+/*--- MEDIA QUERIES --*/
+@media screen and (max-width: 768px) {
+  .slider .bx-wrapper .bx-controls {
+    display: none;
+  }
+  .parallax-inner {
+    display: none;
+  }
+  .one-third {
+    width: 100%;
+    margin: 4% 0;
+  }
+  .one-half {
+    display: none;
+  }
+  h1 {
+    font-size: 125%;
+  }
+  .left-col {
+    width: 100%;
+    margin: 0 0 3% 0;
+  }
+  .sidebar {
+    width: 100%;
+    margin: 0;
+  }
+  img {
+    width: 100%;
+  }
+  h3 {
+    padding-top: 3%;
+  }
+}
